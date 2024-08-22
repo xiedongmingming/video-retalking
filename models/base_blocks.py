@@ -7,7 +7,8 @@ from torch.nn.utils.spectral_norm import spectral_norm as SpectralNorm
 
 from models.ffc import FFC
 from basicsr.archs.arch_util import default_init_weights
-
+# pip install -i https://mirrors.aliyun.com/pypi/simple tb-nightly
+# pip install -i https://pypi.tuna.tsinghua.edu.cn/simple basicsr==1.4.2
 
 class Conv2d(nn.Module):
     def __init__(self, cin, cout, kernel_size, stride, padding, residual=False, *args, **kwargs):
